@@ -2,9 +2,12 @@ doctype html
 html
     head
         title Shawn Chambless
-        link(href='')
-    body
-    
+        link(href='styles/modernizr.css' rel='stylesheet')
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css' rel='stylesheet')
+        link(href='styles/main.css' rel='stylesheet')
+    body(ng-app='personalSite')
+        
+        ng-view
     
         
         script(src='bower_components/angular/angular.js')
