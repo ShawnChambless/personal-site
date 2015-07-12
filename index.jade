@@ -8,6 +8,8 @@ html
     body(ng-app='personalSite' ng-controller='indexCtrl')
         nav
             .navbar
+                .navHeadshot
+                    img(ng-src='assets/images/headshot.jpg')
                 .page {{page}}
                 .navBtns
                     a(href='/#/home') HOME
