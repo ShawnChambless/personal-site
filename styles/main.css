@@ -5,8 +5,8 @@ html, body {
   padding: 0; }
 
 body {
-  background: #3090C7;
   font-family: "Helvetica Nue", Helvetica, Arial, sans-serif;
+  background: #606060;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -19,32 +19,39 @@ a {
   color: inherit; }
 
 nav {
-  height: 50px;
-  background: #bada55; }
+  height: 50px; }
   nav .navbar {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     height: 100%; }
-  nav .page {
-    color: #fff;
-    font-size: 2em;
-    width: 20%;
-    margin: 0 45% 0 0; }
-  nav .navBtns {
-    width: 30%; }
-    nav .navBtns a {
-      margin: 0 10px;
-      padding: 10px; }
+
+.navHeadshot {
+  width: 10%; }
+  .navHeadshot img {
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 50% 0 0; }
+
+.page {
+  color: #fff;
+  font-size: 2em;
+  width: 20%;
+  margin: 0 20% 0 0; }
+
+.navBtns {
+  width: 30%; }
+  .navBtns a {
+    margin: 0 10px;
+    padding: 10px; }
 
 .logo {
   display: -webkit-box;
@@ -54,4 +61,44 @@ nav {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  background: #666; }
+  margin-bottom: 35px; }
+
+.htmlLogo, .cssLogo, .jsLogo, .angularLogo, .mongoLogo, .nodeLogo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f1f1f1;
+  box-shadow: 0 0 1px #f0f0f0, 0 0 2px #a0a0a0;
+  padding: 5px; }
+
+.headshotWrapper {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.headshot {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 100%; }
+  .headshot .headshotImage {
+    height: 300px;
+    border-radius: 50%; }
