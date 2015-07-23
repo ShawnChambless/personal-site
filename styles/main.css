@@ -6,7 +6,6 @@ html, body {
 
 body {
   font-family: "Helvetica Nue", Helvetica, Arial, sans-serif;
-  background: #606060;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -19,7 +18,9 @@ a {
   color: inherit; }
 
 nav {
-  height: 50px; }
+  height: 50px;
+  width: 100%;
+  max-width: 100vw; }
   nav .navbar {
     display: -webkit-box;
     display: -webkit-flex;
@@ -32,14 +33,12 @@ nav {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+    background: #333;
     height: 100%; }
 
-.navHeadshot {
-  width: 10%; }
-  .navHeadshot img {
-    height: 40px;
-    border-radius: 50%;
-    margin: 0 50% 0 0; }
+.navHeadshot img {
+  height: 40px;
+  border-radius: 50%; }
 
 .page {
   color: #fff;
@@ -48,10 +47,15 @@ nav {
   margin: 0 20% 0 0; }
 
 .navBtns {
-  width: 30%; }
+  margin-left: 70%; }
   .navBtns a {
     margin: 0 10px;
-    padding: 10px; }
+    padding: 10px 14px;
+    color: #fff;
+    -webkit-transition: all 200ms ease-in-out;
+            transition: all 200ms ease-in-out; }
+    .navBtns a:hover {
+      background: #444; }
 
 .logo {
   display: -webkit-box;
