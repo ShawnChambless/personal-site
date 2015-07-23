@@ -6,13 +6,12 @@ html
         link(href='styles/main.css' rel='stylesheet')
     body(ng-app='personalSite' ng-controller='homeCtrl')
         nav
-            .navbar
-                .navHeadshot
-                    img(ng-src='public/assets/images/headshot.jpg')
-                .navBtns
-                    a(href='/#/home') HOME
-                    a(href='/#/about') ABOUT
-                    a(href='/#/projects') PROJECTS
+            .navHeadshot
+                img(ng-src='public/assets/images/headshot.jpg')
+            .navBtns
+                a(href='/#/home') HOME
+                a(href='/#/about') ABOUT
+                a(href='/#/projects') PROJECTS
                 
         ng-view
     
