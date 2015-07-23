@@ -2,24 +2,22 @@
 <html>
   <head>
     <title>Shawn Chambless</title>
-    <link href="styles/modernizr.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
   </head>
-  <body ng-app="personalSite" ng-controller="indexCtrl">
+  <body ng-app="personalSite" ng-controller="homeCtrl">
     <nav>
       <div class="navbar">
-        <div class="navHeadshot"><img ng-src="assets/images/headshot.jpg"></div>
-        <div class="page">{{page}}</div>
+        <div class="navHeadshot"><img ng-src="public/assets/images/headshot.jpg"></div>
         <div class="navBtns"><a href="/#/home">HOME</a><a href="/#/about">ABOUT</a><a href="/#/projects">PROJECTS</a></div>
       </div>
     </nav>
     <ng-view></ng-view>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="scripts/app/app.js"></script>
-    <script src="scripts/app/services/mainService.js"></script>
-    <script src="scripts/app/controllers/mainCtrl.js"></script>
-    <script src="scripts/app/controllers/indexCtrl.js"></script>
+    <script src="public/app/app.js"></script>
+    <script src="public/app/main/mainService.js"></script>
+    <script src="public/app/main/mainCtrl.js"></script>
+    <script src="public/app/home/homeCtrl.js"></script>
   </body>
 </html>
