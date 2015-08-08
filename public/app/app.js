@@ -4,8 +4,9 @@ app.config(function($routeProvider) {
     $routeProvider
 
         .when('/home', {
-            templateUrl: 'public/app/home/homeTmpl.html',
+            templateUrl: 'productionFiles/html/home/homeTmpl.html',
             controller: 'homeCtrl'
         })
-        .otherwise('/home')
+        .otherwise('/home');
+
 });
