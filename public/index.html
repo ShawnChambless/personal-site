@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shawn Chambless</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body ng-app="personalSite" ng-controller="homeCtrl">
+    <header role="banner" class="navigation">
+      <div class="navigation-wrapper"><a id="js-mobile-menu" ng-href="javascript:void(0)" class="navigation-menu-button">MENU</a>
+        <nav role="navigation">
+          <ul id="js-navigation-menu" class="navigation-menu show">
+            <li class="nav-link"><a ng-href="javascript:void(0)">Products</a></li>
+            <li class="nav-link"><a ng-href="javascript:void(0)">About Us</a></li>
+            <li class="nav-link"><a ng-href="javascript:void(0)">Contact</a></li>
+            <li class="nav-link more"><a ng-href="javascript:void(0)">More</a>
+              <ul class="submenu">
+                <li><a ng-href="javascript:void(0)">Submenu Item</a></li>
+                <li><a ng-href="javascript:void(0)">Another Item</a></li>
+                <li class="more"><a ng-href="javascript:void(0)">Item with submenu</a>
+                  <ul class="submenu">
+                    <li><a ng-href="javascript:void(0)">Sub-submenu Item</a></li>
+                    <li><a ng-href="javascript:void(0)">Another Item</a></li>
+                  </ul>
+                </li>
+                <li class="more"><a ng-href="javascript:void(0)">Another submenu</a>
+                  <ul class="submenu">
+                    <li><a ng-href="javascript:void(0)">Sub-submenu</a></li>
+                    <li><a ng-href="javascript:void(0)">An Item</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="navigation-tools">
+          <div class="search-bar">
+            <form role="search">
+              <input type="search" placeholder="Enter Search">
+              <button type="submit"><img ng-src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <ng-view></ng-view>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="app/functions.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/main/mainService.js"></script>
+    <script src="app/main/mainCtrl.js"></script>
+    <script src="app/home/homeCtrl.js"></script>
+  </body>
+</html>

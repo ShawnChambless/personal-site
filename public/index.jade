@@ -1,0 +1,65 @@
+doctype html
+html
+    head
+        title Shawn Chambless
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css' rel='stylesheet')
+        link(href='styles/main.css' rel='stylesheet')
+    body(ng-app='personalSite' ng-controller='homeCtrl')
+        header.navigation(role='banner')
+          .navigation-wrapper
+            a#js-mobile-menu.navigation-menu-button(ng-href='javascript:void(0)') MENU
+            nav(role='navigation')
+              ul#js-navigation-menu.navigation-menu.show
+                li.nav-link
+                  a(ng-href='javascript:void(0)') Products
+                li.nav-link
+                  a(ng-href='javascript:void(0)') About Us
+                li.nav-link
+                  a(ng-href='javascript:void(0)') Contact
+                li.nav-link.more
+                  a(ng-href='javascript:void(0)') More
+                  ul.submenu
+                    li
+                      a(ng-href='javascript:void(0)') Submenu Item
+                    li
+                      a(ng-href='javascript:void(0)') Another Item
+                    li.more
+                      a(ng-href='javascript:void(0)') Item with submenu
+                      ul.submenu
+                        li
+                          a(ng-href='javascript:void(0)') Sub-submenu Item
+                        li
+                          a(ng-href='javascript:void(0)') Another Item
+                    li.more
+                      a(ng-href='javascript:void(0)') Another submenu
+                      ul.submenu
+                        li
+                          a(ng-href='javascript:void(0)') Sub-submenu
+                        li
+                          a(ng-href='javascript:void(0)') An Item
+            .navigation-tools
+              .search-bar
+                form(role='search')
+                  input(type='search', placeholder='Enter Search')
+                  button(type='submit')
+                    img(ng-src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png', alt='Search Icon')
+
+        //- nav
+        //-     .navHeadshot
+        //-         img(ng-src='assets/images/headshot.jpg')
+        //-     .navBtns
+        //-         a(ng-href='/#/home') home
+        //-         a(ng-href='/#/about') about
+        //-         a(ng-href='/#/projects') projects
+             
+        ng-view
+    
+        
+        script(src='bower_components/angular/angular.js')
+        script(src='bower_components/angular-route/angular-route.js')
+        script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+        script(src='app/functions.js')
+        script(src='app/app.js')
+        script(src='app/main/mainService.js')
+        script(src='app/main/mainCtrl.js')
+        script(src='app/home/homeCtrl.js')
