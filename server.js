@@ -8,7 +8,7 @@ var express     = require('express'),
     httpServer  = http.createServer(app);
 
 
-// app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(express.static(__dirname + '/public'));
 
 
