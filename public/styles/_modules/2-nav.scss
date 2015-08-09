@@ -258,6 +258,9 @@ header.navigation {
           text-align: left;
           width: $navigation-submenu-width;
         }
+        &:hover {
+            background: lighten($navigation-background, 3%);
+        }
       }
     }
   }

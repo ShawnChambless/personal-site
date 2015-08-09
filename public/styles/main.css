@@ -322,6 +322,10 @@ header.navigation ul.submenu li a {
   }
 }
 
+header.navigation ul.submenu li a:hover {
+  background: #3b3b3b;
+}
+
 header.navigation .navigation-tools {
   background: #505050;
   clear: both;
@@ -559,4 +563,16 @@ header.navigation .search-bar form button[type=submit] img {
 
 .card:active .card-header {
   background-color: #f6f6f6;
+}
+
+.hero.about {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero.about::after {
+  clear: both;
+  content: "";
+  display: table;
 }
