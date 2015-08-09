@@ -11,39 +11,26 @@ html
             nav(role='navigation')
               ul#js-navigation-menu.navigation-menu.show
                 li.nav-link
-                  a(ng-href='javascript:void(0)') Products
-                li.nav-link
-                  a(ng-href='javascript:void(0)') About Us
-                li.nav-link
-                  a(ng-href='javascript:void(0)') Contact
+                  a(ng-href='/#/about') About
+                li.nav-link.more
+                    a(ng-href='javascript:void(0)') Contact
+                    ul.submenu
+                        li.contact
+                            a(ng-href='mailto:shawn.chambless@gmail.com') shawn.chambless@gmail.com
+                        li.contact
+                            a(ng-href='tel:+1-229-456-5234') (229)-456-5234
                 li.nav-link.more
                   a(ng-href='javascript:void(0)') More
                   ul.submenu
                     li
-                      a(ng-href='javascript:void(0)') Submenu Item
+                      a(ng-href='https://github.com/ShawnChambless' target='_blank')
+                          img.logo(ng-src='assets/images/octocat.png')
                     li
-                      a(ng-href='javascript:void(0)') Another Item
-                    li.more
-                      a(ng-href='javascript:void(0)') Item with submenu
-                      ul.submenu
-                        li
-                          a(ng-href='javascript:void(0)') Sub-submenu Item
-                        li
-                          a(ng-href='javascript:void(0)') Another Item
-                    li.more
-                      a(ng-href='javascript:void(0)') Another submenu
-                      ul.submenu
-                        li
-                          a(ng-href='javascript:void(0)') Sub-submenu
-                        li
-                          a(ng-href='javascript:void(0)') An Item
-            .navigation-tools
-              .search-bar
-                form(role='search')
-                  input(type='search', placeholder='Enter Search')
-                  button(type='submit')
-                    img(ng-src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png', alt='Search Icon')
-
+                      a(ng-href='https://twitter.com/ShawnChambless' target='_blank')
+                          img.logo(ng-src='assets/images/twitterSmall.png')
+                    li
+                        a(ng-href='https://www.linkedin.com/in/shawnchambless' target='_blank')
+                            img.logo(ng-src='assets/images/linkedinSmall.png')
         //- nav
         //-     .navHeadshot
         //-         img(ng-src='assets/images/headshot.jpg')

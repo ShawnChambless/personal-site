@@ -28,19 +28,19 @@ header.navigation {
   .navigation-wrapper {
     @include clearfix;
     @include outer-container;
-    position: relative;
+    // position: relative;
     z-index: 9999;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .logo {
-    float: left;
-    max-height: $navigation-height;
+    max-height: 40px;
     padding-left: $navigation-padding;
-    padding-right: 2em;
 
     img {
       max-height: $navigation-height;
-      padding: 0.8em 0;
+    //   padding: 0.8em 0;
     }
   }
 
@@ -69,10 +69,10 @@ header.navigation {
   // Nav menu
 
   nav {
-    float: none;
     min-height: $navigation-height;
     z-index: 9999999;
-
+    display: flex;
+    align-items: center;
     @include media ($horizontal-bar-mode) {
       float: left;
     }
@@ -123,10 +123,12 @@ header.navigation {
       color: $navigation-color;
       display: inline-block;
       text-decoration: none;
+      height: 100%;
+      margin: 0 auto;
 
-      @include media ($horizontal-bar-mode) {
-        padding-right: 1em;
-      }
+    //   @include media ($horizontal-bar-mode) {
+    //     padding-right: 1em;
+    //   }
 
       &:focus,
       &:hover {
@@ -148,9 +150,14 @@ header.navigation {
     @include media($horizontal-bar-mode) {
       padding-right: $navigation-submenu-padding;
     }
-
+    > ul > li a {
+        width: 110px;
+    }
     > ul > li:first-child a  {
       padding-top: 1em;
+    }
+    > ul > li.contact a {
+        width: 300px;
     }
 
     a {
