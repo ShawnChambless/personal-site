@@ -1,6 +1,6 @@
 var app = angular.module('personalSite', ['ngRoute']);
 
-app.config(function($routeProvider) {
+app.config(['$routeProvider', function($routeProvider) {
     $routeProvider
 
         .when('/home', {
@@ -9,4 +9,4 @@ app.config(function($routeProvider) {
         })
         .otherwise('/home');
 
-});
+}]);

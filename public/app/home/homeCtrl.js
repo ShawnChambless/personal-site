@@ -1,5 +1,5 @@
 var app = angular.module('personalSite');
 
-app.controller('homeCtrl', function($scope, $location) {
-    
-})
+app.controller('homeCtrl', ['$scope', '$location', function($scope, $location) {
+
+}]);

@@ -1,1 +1,1 @@
-var app=angular.module("personalSite");app.controller("homeCtrl",function(a,l){});
+var app=angular.module("personalSite");app.controller("homeCtrl",["$scope","$location",function(o,a){}]);
