@@ -12,4 +12,4 @@ app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(express.static(__dirname + '/public'));
 
 
-httpServer.listen(8081, function(){console.log('Server is listening on 8081');});
+httpServer.listen(80);
