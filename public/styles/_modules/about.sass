@@ -6,6 +6,8 @@ section
     align-items: center
     width: 100%
     margin-bottom: 20px
+    background: saturate(lighten($blue, 40%), 20%)
+    padding: 2%
     @include outer-container
     @include media($mobile)
         display: initial
@@ -28,3 +30,5 @@ aside
     @include span-columns(8)
     @include media($mobile)
         @include span-columns(12)
+a.devMountainLink
+    color: blue
