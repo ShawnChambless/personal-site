@@ -20,7 +20,12 @@ html
             
         ng-view
         footer.footer-2(role='contentinfo')
-            ul
+            ul.contact
+                li
+                    a(ng-href='tel:+12294565234') (229) 456-5234
+                li
+                    a(ng-href='mailto:shawn.chambless@gmail.com') shawn.chambless@gmail.com
+            ul.social
                 li
                     a(ng-href='https://github.com/ShawnChambless' target='_blank')
                         img.navImage(ng-src='assets/images/Octocat.png')
@@ -30,7 +35,6 @@ html
                 li
                     a(ng-href='https://twitter.com/ShawnChambless' target='_blank')
                         img.navImage.twitter(ng-src='assets/images/twitterSmall.png')
-    
         script.
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

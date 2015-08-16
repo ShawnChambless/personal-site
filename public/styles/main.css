@@ -693,6 +693,8 @@ section {
           align-items: center;
   width: 100%;
   margin-bottom: 20px;
+  background: #e2ecfb;
+  padding: 2%;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
@@ -777,11 +779,17 @@ aside:last-child {
   }
 }
 
+a.devMountainLink {
+  color: blue;
+}
+
 .project {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   margin: 25px auto;
+  background: #e2ecfb;
+  padding: 2%;
 }
 
 .project::after {
@@ -803,10 +811,9 @@ h2 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
