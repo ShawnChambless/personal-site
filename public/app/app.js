@@ -1,15 +1,15 @@
-var app = angular.module('personalSite', ['ngRoute']);
-
-app.config(['$routeProvider', function($routeProvider) {
+angular.module('personalSite', ['ngRoute'])
+.config(['$routeProvider', function($routeProvider) {
     $routeProvider
-
         .when('/home', {
-            templateUrl: 'productionFiles/html/home/homeTmpl.html',
+            templateUrl: 'app/home/homeTmpl.html',
             controller: 'homeCtrl'
         })
         .when('/about', {
-            templateUrl: 'productionFiles/html/about/aboutTmpl.html'
+            templateUrl: 'app/about/aboutTmpl.html'
+        })
+        .when('/projects', {
+            templateUrl: 'app/projects/projectsTmpl.html'
         })
         .otherwise('/home');
-
 }]);

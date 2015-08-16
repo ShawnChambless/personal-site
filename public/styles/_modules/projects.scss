@@ -17,7 +17,7 @@
     $card-background: lighten($card-border-color, 10%);
     $card-header-background: $card-background;
     $card-margin: 1em;
-    $card-image-hover-opacity: .8;
+    $card-image-hover-opacity: .7;
     $card-image-hover-color: #3090C7;
 
     @include flex-basis(15em);
@@ -36,7 +36,6 @@
     overflow: hidden;
     height: 150px;
     max-height: 150px;
-    background-color: $card-image-hover-color;
 
     img {
       @include transition (all 0.2s ease-in-out);
@@ -70,17 +69,9 @@
   &:focus,
   &:hover {
     cursor: pointer;
-
+    box-shadow: 0 0 5px #888;
     img {
       opacity: $card-image-hover-opacity;
-    }
-  }
-
-  &:active {
-    background-color: $card-background;
-
-    .card-header {
-      background-color: $card-background;
     }
   }
 }

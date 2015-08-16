@@ -4,6 +4,7 @@ var gulp            = require('gulp'),
     bulkSass        = require('gulp-cssimport'),
     autoprefixer    = require('gulp-autoprefixer'),
     plumber         = require('gulp-plumber'),
+    rename          = require('gulp-rename'),
     jade            = require('gulp-jade');
 
 paths = {
@@ -19,7 +20,7 @@ gulp.task('jade', function() {
         .pipe(jade({
             pretty: true
         }))
-        .pipe(gulp.dest('./public/productionFiles/html'));
+        .pipe(gulp.dest('./public/app/'));
 });
 
 gulp.task('jadeIndex', function() {
@@ -28,7 +29,7 @@ gulp.task('jadeIndex', function() {
         .pipe(jade({
             pretty: true
         }))
-        .pipe(gulp.dest('./public'));
+        .pipe(gulp.dest('./public/'));
 });
 
 gulp.task('sass', function() {
@@ -46,7 +47,8 @@ gulp.task('compress', function() {
     return gulp.src(paths.scripts)
         .pipe(plumber())
         .pipe(uglify())
-        .pipe(gulp.dest('./public/productionFiles/minifiedJS'));
+        .pipe(rename({ extname: '.min.js' }))
+        .pipe(gulp.dest('./public/minified'));
 });
 
 gulp.task('watch', function() {

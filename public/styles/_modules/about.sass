@@ -1,2 +1,30 @@
-.hero.about
-    +outer-container
+$mobile: new-breakpoint(max-width 600px)
+h1.title
+    text-align: center
+section
+    display: flex
+    align-items: center
+    width: 100%
+    margin-bottom: 20px
+    @include outer-container
+    @include media($mobile)
+        display: initial
+.aboutImg
+    height: 255px
+    margin: 10px 0
+    @include span-columns(4)
+    @include media($mobile)
+        height: 275px
+        @include span-columns(12)
+    img
+        width: 340px
+        height: 100%
+        @include image-rendering(optimizeSpeed)
+        @include media($mobile)
+            @include span-columns(12)
+
+
+aside
+    @include span-columns(8)
+    @include media($mobile)
+        @include span-columns(12)

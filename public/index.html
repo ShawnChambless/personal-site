@@ -7,29 +7,25 @@
     <link href="styles/main.css" rel="stylesheet">
   </head>
   <body ng-app="personalSite" ng-controller="homeCtrl">
-    <header role="banner" class="navigation">
-      <div class="navigation-wrapper"><a id="js-mobile-menu" ng-href="javascript:void(0)" class="navigation-menu-button">MENU</a>
+    <header role="banner" class="centered-navigation">
+      <div class="centered-navigation-wrapper"><a id="js-centered-navigation-mobile-menu" href="javascript:void(0)" class="centered-navigation-mobile-menu">MENU</a>
         <nav role="navigation">
-          <ul id="js-navigation-menu" class="navigation-menu show">
-            <li class="nav-link"><a ng-href="/#/about">About</a></li>
-            <li class="nav-link more"><a ng-href="javascript:void(0)">Contact</a>
-              <ul class="submenu">
-                <li class="contact"><a ng-href="mailto:shawn.chambless@gmail.com">shawn.chambless@gmail.com</a></li>
-                <li class="contact"><a ng-href="tel:+1-229-456-5234">(229)-456-5234</a></li>
-              </ul>
-            </li>
-            <li class="nav-link more"><a ng-href="javascript:void(0)">More</a>
-              <ul class="submenu">
-                <li><a ng-href="https://github.com/ShawnChambless" target="_blank"><img ng-src="assets/images/Octocat.png" class="logo"></a></li>
-                <li><a ng-href="https://twitter.com/ShawnChambless" target="_blank"><img ng-src="assets/images/twitterSmall.png" class="logo"></a></li>
-                <li><a ng-href="https://www.linkedin.com/in/shawnchambless" target="_blank"><img ng-src="assets/images/linkedinSmall.png" class="logo"></a></li>
-              </ul>
-            </li>
+          <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+            <li class="nav-link"><a href="#/">Home</a></li>
+            <li class="nav-link"><a href="#/projects">Projects</a></li>
+            <li class="nav-link"><a ng-href="#/about">About</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <ng-view></ng-view>
+    <footer role="contentinfo" class="footer-2">
+      <ul>
+        <li><a ng-href="https://github.com/ShawnChambless" target="_blank"><img ng-src="assets/images/Octocat.png" class="navImage"></a></li>
+        <li><a ng-href="https://www.linkedin.com/in/shawnchambless" target="_blank"><img ng-src="assets/images/linkedinSmall.png" class="navImage linkedIn"></a></li>
+        <li><a ng-href="https://twitter.com/ShawnChambless" target="_blank"><img ng-src="assets/images/twitterSmall.png" class="navImage twitter"></a></li>
+      </ul>
+    </footer>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -42,8 +38,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-route.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="productionFiles/minifiedJS/functions.js"></script>
-    <script src="productionFiles/minifiedJS/app.js"></script>
-    <script src="productionFiles/minifiedJS/home/homeCtrl.js"></script>
+    <script src="minified/app.min.js"></script>
+    <script src="minified/home/homeCtrl.min.js"></script>
   </body>
 </html>
