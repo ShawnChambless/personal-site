@@ -1,2 +1,2 @@
-# My Personal Websit
+# My Personal Website
 ## Built with AngularJS, NodeJS, and ExpressJS.
