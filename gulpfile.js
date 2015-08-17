@@ -5,6 +5,7 @@ var gulp            = require('gulp'),
     autoprefixer    = require('gulp-autoprefixer'),
     plumber         = require('gulp-plumber'),
     rename          = require('gulp-rename'),
+    uglifyCss       = require('gulp-uglifycss'),
     jade            = require('gulp-jade');
 
 paths = {
@@ -40,6 +41,10 @@ gulp.task('sass', function() {
             outputStyle: 'expanded'
         }))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
+        .pipe(uglifyCss({
+            expandVars: true,
+            uglyComments: true
+        }))
         .pipe(gulp.dest('./public/styles'));
 });
 
