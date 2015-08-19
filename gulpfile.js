@@ -9,10 +9,10 @@ var gulp            = require('gulp'),
     jade            = require('gulp-jade');
 
 paths = {
-                jadeIndex: ['./public/index.jade'],
-                jade: ['./public/app/**/*.jade'],
-                sass: ['./public/styles/main.sass'],
-                scripts: ['./public/app/**/*.js']
+                jadeIndex: ['public/index.jade'],
+                jade: ['public/app/**/*.jade'],
+                sass: ['public/styles/main.sass'],
+                scripts: ['public/app/**/*.js']
     };
 
 gulp.task('jade', function() {
@@ -59,7 +59,7 @@ gulp.task('compress', function() {
 gulp.task('watch', function() {
     gulp.watch(paths.jade, ['jade']);
     gulp.watch(paths.jadeIndex, ['jadeIndex']);
-    gulp.watch(['./public/styles/**/*.sass', './public/styles/**/*.scss'], ['sass']);
+    gulp.watch(['public/styles/**/*.sass', 'public/styles/**/*.scss'], ['sass']);
     gulp.watch(paths.scripts, ['compress']);
 });
 
