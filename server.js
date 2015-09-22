@@ -13,4 +13,4 @@ app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(express.static(__dirname + '/public'));
 
 
-httpServer.listen(8080);
+httpServer.listen(80);
