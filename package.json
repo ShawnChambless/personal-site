@@ -6,14 +6,6 @@
   "dependencies": {
     "compression": "^1.5.2",
     "express": "^4.13.3",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^2.3.1",
-    "gulp-cssimport": "^2.1.1",
-    "gulp-jade": "^1.1.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-sass": "^2.0.4",
-    "gulp-uglify": "^1.2.0",
-    "gulp-webserver": "^0.9.1",
     "http": "0.0.0",
     "serve-favicon": "^2.3.0"
   },
