@@ -8,9 +8,10 @@ var express     = require('express'),
     compress    = require('compression'),
     httpServer  = http.createServer(app);
 
-app.use(compress());
-app.use(favicon(__dirname + '/public/favicon.ico'));
-app.use(express.static(__dirname + '/public'));
+app
+    .use(compress())
+    .use(favicon(__dirname + '/public/favicon.ico'))
+    .use(express.static(__dirname + '/public'));
 
 
 httpServer.listen(80);
