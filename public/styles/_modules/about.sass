@@ -5,7 +5,8 @@ section
     width: 100%
     margin-bottom: 20px
     padding: 2%
-    border-right: 2px solid transparentize($blue, .3)
+    // border-right: 2px solid transparentize($blue, .3)
+    background: transparentize(#999, .8)
     @include outer-container
     @include media($mobile)
         display: initial
@@ -14,14 +15,14 @@ section
             padding: 0 3%
             text-align: justify
 .aboutImg
-    height: 255px
+    height: 275px
     margin: 10px 0
     @include span-columns(4)
     @include media($mobile)
         height: 275px
         @include span-columns(12)
     img
-        padding: 0 2%
+        margin: 0 2%
         width: 340px
         height: 275px
         @include media($mobile)

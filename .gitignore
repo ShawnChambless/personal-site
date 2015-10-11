@@ -1,5 +1,5 @@
 # Created by https://www.gitignore.io
-
+server.js
 ### Node ###
 # Logs
 logs
@@ -75,4 +75,3 @@ Temporary Items
 config.codekit
 /min
 public/styles/tools
-server.js
