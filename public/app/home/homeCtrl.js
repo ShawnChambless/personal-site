@@ -12,12 +12,11 @@ $(document).ready(function() {
       }
     });
   });
-  $('.nav-link').on('click', function() {
-      if($(window).width() < 860) {
-          $('#js-centered-navigation-menu').slideUp('fast');
-      }
-  });
-
+    if($(window).width() < 860) {
+        $('.nav-link').on('click', function() {
+            $('#js-centered-navigation-menu').slideUp('fast');
+        });
+    }
 });
 
 }]);
