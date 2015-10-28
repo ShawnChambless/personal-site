@@ -3,6 +3,12 @@
         img.hero-logo(ng-src='assets/images/headshot2.png', alt='Logo Image')
         .hero-copy
             h1 Shawn Chambless
+            p Motivated web developer with a passion for improving his code.
+        ul.contact
+            li
+                a(ng-href='tel:+12294565234') (229) 456-5234
+            li
+                a(ng-href='mailto:shawn.chambless@gmail.com') shawn.chambless@gmail.com
 .cards
     .card
         .card-image
@@ -13,14 +19,17 @@
             p The GitHub repository for shawnchambless.com.
     .card
         .card-image
-            a(ng-href='http://grainbilld.com' target='_blank')
+            a(ng-href='#/projects')
                 img(ng-src='assets/images/grainbilld.png', alt='grainbilld.com')
-        .card-header grainbilld.com
+        .card-header Grain Billd V.1
+        a(ng-href='https://github.com/ShawnChambless/GrainBilld2' target='_blank')
+            .card-header
+                | Grain Billd V.2 - GitHub
         .card-copy
             p A beer brewing application designed to be the one-stop shop for brewers.
     .card
         .card-image
-            a(ng-href='http://resources.devmounta.in' target='_blank')
+            a(ng-href='#/projects')
                 img(ng-src='assets/images/devmtn.png', alt='devmounta.in')
         .card-header devmounta.in/resources
         .card-copy

@@ -9,9 +9,13 @@ var express     = require('express'),
     httpServer  = http.createServer(app);
 
 app
+    .get('/*', function(req, res, next) {
+        res.setHeader('Access-Control-Allow-Origin', 'http://shawnchambless.com', 'http://localhost:8080/*');
+        next();
+    })
     .use(compress())
     .use(favicon(__dirname + '/public/favicon.ico'))
     .use(express.static(__dirname + '/public'));
 
 
-httpServer.listen(80);
+httpServer.listen(8080);

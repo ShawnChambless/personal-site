@@ -33,6 +33,8 @@
     line-height: 1.5em;
     margin: 0 0 1em 0;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
 
     @include media($large-screen) {
       float: left;
@@ -102,8 +104,9 @@
         }
       }
     }
-  }
 }
+}
+
 .navImage {
     height: 50px;
     &.linkedIn {
