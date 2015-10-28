@@ -12,6 +12,10 @@ $(document).ready(function() {
       }
     });
   });
+  $('.nav-link').on('click', function() {
+      $('#js-centered-navigation-menu').slideUp('fast');
+  });
+
 });
 
 }]);
